@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="4dp">
+
+    <TextView
+        android:id="@+id/label_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text=""
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle=""/>
+
+    <TextView
+        android:id="@+id/label_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/label_price"
+        android:layout_toStartOf="@+id/label_price"
+        android:maxLines="1"
+        android:text=""
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/label_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_title"
+        android:layout_toLeftOf="@+id/label_price"
+        android:layout_toStartOf="@+id/label_price"
+        android:maxLines="1"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/label_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_place"
+        android:layout_toLeftOf="@+id/label_price"
+        android:layout_toStartOf="@+id/label_price"
+        android:maxLines="1"
+        android:text=""/>
+</RelativeLayout>
